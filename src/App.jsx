@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { Github, Mail, Linkedin, ExternalLink, Code2, Database, Server, Terminal, Braces, Cloud, Zap, Cpu, Globe, Type, Paintbrush, Palette, Atom, ArrowRight, Box, GitBranch, Aperture, Code,Sigma, Waypoints, Feather, CreditCard, MapPin } from 'lucide-react'; // ADDED new icons
  // Import necessary icons for data arrays
 
+
 // Component Imports
 import ParticleBackground from "./Component/ParticleBackground";
 import Navigation from "./Component/Navigation";
@@ -148,6 +149,9 @@ const allSkills = [
 
 // --- APP COMPONENT ---
 
+
+
+
 export default function App() {
   const [projects, setProjects] = useState(manualProjects);
   const [activeSection, setActiveSection] = useState("home");
@@ -222,6 +226,7 @@ export default function App() {
   };
 
   return (
+    <main>
     <div className="min-h-screen bg-black text-white overflow-x-hidden relative">
       <ParticleBackground mousePosition={mousePosition} particles={particles} />
 
@@ -245,5 +250,6 @@ export default function App() {
 
       <Footer />
     </div>
+    </main>
   );
 }

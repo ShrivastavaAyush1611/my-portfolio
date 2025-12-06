@@ -13,6 +13,7 @@ import {
 
 export default function Hero({ isVisible, scrollToSection }) {
   return (
+    
     <section
       id="home"
       className="min-h-screen flex items-center justify-center px-6 pt-20 relative z-10"
@@ -138,5 +139,6 @@ export default function Hero({ isVisible, scrollToSection }) {
         </div>
       </div>
     </section>
+
   );
 }
